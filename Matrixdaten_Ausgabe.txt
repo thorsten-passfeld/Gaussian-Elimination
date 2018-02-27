@@ -1,0 +1,52 @@
+Zeilentest
+----------
+!!! Zeile::operator[] -- falscher Zeilenindex
+!!! Zeile::operator+= --- Dimensionen stimmen nicht
+
+
+Matrixtest
+----------
+A: 4x5
+       0        0        2        6        6 
+       1        2        1        4        3 
+       1        2        2        7        6 
+       2        4        1        5        3 
+
+Zwischenergebnisse -- schrittweise
+
+       1        2        1        4        3 
+       0        0        2        6        6 
+       1        2        2        7        6 
+       2        4        1        5        3 
+
+
+       1        2        1        4        3 
+       0        0        2        6        6 
+       0        0        1        3        3 
+       0        0       -1       -3       -3 
+
+
+Stufenform: 
+       1        2        1        4        3 
+       0        0        2        6        6 
+
+
+---------------------
+
+
+B: 3x2
+       2        4 
+       3        6 
+       4       -2 
+
+Stufenform: 
+       2        4 
+       0      -10 
+
+
+---------------------
+
+
+!!!  Matrix::Matrix --- Fehler beim Einlesen an Stelle (0,1)
+
+
